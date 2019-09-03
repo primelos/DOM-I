@@ -76,11 +76,10 @@ a6.textContent = siteContent["nav"]["nav-item-6"]
 
 
 let hh1 = document.querySelector("h1")
-hh1.textContent = siteContent["cta"]["h1"];
 
-console.log(hh1)
-let arr = Array.from(hh1)
-console.log(arr)
+hh1.textContent = siteContent["cta"]["h1"];
+hh1.innerHTML = "DOM<br>Is<br>Awesome";
+// console.log(hh1)
 
 
 
@@ -90,8 +89,9 @@ let button = document.querySelector('button')
 button.textContent = siteContent["cta"]['button']
 
 let feat = document.querySelector(".text-content  h4")
-console.log(feat)
+// console.log(feat)
 feat.textContent = siteContent['main-content']["features-h4"] 
+
 
 let p1 = document.querySelector(".text-content p" );
 p1.textContent = siteContent["main-content"]["features-content"]
@@ -128,6 +128,7 @@ cont.textContent = siteContent["contact"]["contact-h4"]
 
 let p6 = document.querySelector(".contact p");
 p6.textContent = siteContent["contact"]["address"]
+p6.innerHTML = "123 Way 456 Street <br>Somewhere, USA"
 
 let p7 = document.querySelector("section.contact p:nth-child(3)");
 p7.textContent = siteContent["contact"]["phone"]
